@@ -171,8 +171,8 @@ AlphaLens is for educational and informational purposes only. Nothing here is fi
 
 ## Author
 
-**Meet** — [GitHub](https://github.com/Meet141106)
-**Innovator** — [GitHub](https://github.com/innovator-sh)
+- **Meet** — [GitHub](https://github.com/Meet141106)
+- **Innovator (vc)** — [GitHub](https://github.com/innovator-sh)
 
 ---
 
