@@ -107,7 +107,7 @@ class PDFGenerator:
             s = cls._styles()
             story = []
 
-            # ── HEADER ──────────────────────────────────────────────────────
+            # ── HEADER ──
             story.append(Paragraph("🔮 AlphaLens Market Report", s["title"]))
             story.append(Paragraph(f"Ticker: {ticker}", s["subtitle"]))
             story.append(Paragraph(
@@ -118,7 +118,7 @@ class PDFGenerator:
             story.append(HRFlowable(width="100%", thickness=0.8, color=cls.C_PURPLE))
             story.append(Spacer(1, 6*mm))
 
-            # ── SECTION: SUMMARY ────────────────────────────────────────────
+            # ── SECTION: SUMMARY ──
             story.append(Paragraph("Market Summary", s["section"]))
 
             sign = "+" if change_pct >= 0 else ""
@@ -156,7 +156,7 @@ class PDFGenerator:
             story.append(tbl)
             story.append(Spacer(1, 8*mm))
 
-            # ── SECTION: KEY METRICS ─────────────────────────────────────────
+            # ── SECTION: KEY METRICS ──
             story.append(HRFlowable(width="100%", thickness=0.4, color=cls.C_BORDER))
             story.append(Paragraph("Key Metrics", s["section"]))
 
@@ -184,7 +184,7 @@ class PDFGenerator:
             story.append(m_tbl)
             story.append(Spacer(1, 8*mm))
 
-            # ── SECTION: AI INSIGHTS ─────────────────────────────────────────
+            # ── SECTION: AI INSIGHTS ──
             story.append(HRFlowable(width="100%", thickness=0.4, color=cls.C_BORDER))
             story.append(Paragraph("AI Executive Insights", s["section"]))
 
@@ -201,7 +201,7 @@ class PDFGenerator:
             story.append(ai_tbl)
             story.append(Spacer(1, 12*mm))
 
-            # ── FOOTER ───────────────────────────────────────────────────────
+            # ── FOOTER ──
             story.append(HRFlowable(width="100%", thickness=0.8, color=cls.C_PURPLE))
             story.append(Spacer(1, 3*mm))
             story.append(Paragraph(
